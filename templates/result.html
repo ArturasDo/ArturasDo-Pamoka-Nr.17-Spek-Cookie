@@ -4,5 +4,9 @@
 
 {% block content %}
     <p>{{ message }}</p>
-    <p><a href="/">Spėsite dar kartą?</a></p>
+    {% if message[:1] == "A": %}
+        <p></p>
+    {% else: %}
+        <p><a href="/">Spėsite dar kartą?</a></p>
+    {% endif %}
 {% endblock content %}
