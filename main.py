@@ -22,7 +22,7 @@ def result():
     guess = (request.form.get("guess"))
     if guess.upper() == "C":
         # message = "Thank you. Your game is over."
-        message = "Aiū. Žaidimo pabaiga."
+        message = "Ačių. Žaidimo pabaiga."
         response = make_response(render_template("result.html", message=message))
         return response
     if guess.isdigit():
